@@ -1,0 +1,16 @@
+/* 
+    Document   : styles
+    Created on : Oct 5, 2012, 7:23:51 PM
+    Author     : alihashmi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}

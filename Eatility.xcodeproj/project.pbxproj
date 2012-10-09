@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F41ED73161F1E2200489929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED72161F1E2200489929 /* Foundation.framework */; };
+		4F41ED75161F1E2200489929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED74161F1E2200489929 /* UIKit.framework */; };
+		4F41ED77161F1E2200489929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED76161F1E2200489929 /* CoreGraphics.framework */; };
+		4F41ED79161F1E2200489929 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED78161F1E2200489929 /* AddressBook.framework */; };
+		4F41ED7B161F1E2200489929 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED7A161F1E2200489929 /* AddressBookUI.framework */; };
+		4F41ED7D161F1E2200489929 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED7C161F1E2200489929 /* AudioToolbox.framework */; };
+		4F41ED7F161F1E2200489929 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED7E161F1E2200489929 /* AVFoundation.framework */; };
+		4F41ED81161F1E2200489929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED80161F1E2200489929 /* CoreLocation.framework */; };
+		4F41ED83161F1E2200489929 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED82161F1E2200489929 /* MediaPlayer.framework */; };
+		4F41ED85161F1E2200489929 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED84161F1E2200489929 /* QuartzCore.framework */; };
+		4F41ED87161F1E2200489929 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED86161F1E2200489929 /* SystemConfiguration.framework */; };
+		4F41ED89161F1E2200489929 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED88161F1E2200489929 /* MobileCoreServices.framework */; };
+		4F41ED8B161F1E2200489929 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED8A161F1E2200489929 /* CoreMedia.framework */; };
+		4F41ED91161F1E2200489929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F41ED8F161F1E2200489929 /* InfoPlist.strings */; };
+		4F41ED93161F1E2200489929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F41ED92161F1E2200489929 /* main.m */; };
+		4F41ED96161F1E2200489929 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41ED95161F1E2200489929 /* Cordova.framework */; };
+		4F41ED9B161F1E2200489929 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F41ED99161F1E2200489929 /* Localizable.strings */; };
+		4F41ED9F161F1E2200489929 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F41ED9D161F1E2200489929 /* Localizable.strings */; };
+		4F41EDA3161F1E2200489929 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDA1161F1E2200489929 /* Localizable.strings */; };
+		4F41EDA7161F1E2200489929 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDA5161F1E2200489929 /* Localizable.strings */; };
+		4F41EDAA161F1E2200489929 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDA9161F1E2200489929 /* icon.png */; };
+		4F41EDAC161F1E2200489929 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDAB161F1E2200489929 /* icon@2x.png */; };
+		4F41EDAE161F1E2200489929 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDAD161F1E2200489929 /* icon-72.png */; };
+		4F41EDB1161F1E2200489929 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDB0161F1E2200489929 /* Default~iphone.png */; };
+		4F41EDB3161F1E2200489929 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDB2161F1E2200489929 /* Default@2x~iphone.png */; };
+		4F41EDB5161F1E2300489929 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDB4161F1E2300489929 /* Capture.bundle */; };
+		4F41EDB7161F1E2300489929 /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDB6161F1E2300489929 /* Cordova.plist */; };
+		4F41EDBB161F1E2300489929 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F41EDBA161F1E2300489929 /* AppDelegate.m */; };
+		4F41EDBE161F1E2300489929 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F41EDBD161F1E2300489929 /* MainViewController.m */; };
+		4F41EDC0161F1E2300489929 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDBF161F1E2300489929 /* MainViewController.xib */; };
+		4F41EDCA161F1F2500489929 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 4F41EDC9161F1F2500489929 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F41ED6E161F1E2200489929 /* Eatility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F41ED72161F1E2200489929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F41ED74161F1E2200489929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4F41ED76161F1E2200489929 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F41ED78161F1E2200489929 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		4F41ED7A161F1E2200489929 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		4F41ED7C161F1E2200489929 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4F41ED7E161F1E2200489929 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4F41ED80161F1E2200489929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4F41ED82161F1E2200489929 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4F41ED84161F1E2200489929 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4F41ED86161F1E2200489929 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4F41ED88161F1E2200489929 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4F41ED8A161F1E2200489929 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4F41ED8E161F1E2200489929 /* Eatility-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eatility-Info.plist"; sourceTree = "<group>"; };
+		4F41ED90161F1E2200489929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F41ED92161F1E2200489929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F41ED94161F1E2200489929 /* Eatility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eatility-Prefix.pch"; sourceTree = "<group>"; };
+		4F41ED95161F1E2200489929 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
+		4F41ED9A161F1E2200489929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F41ED9E161F1E2200489929 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F41EDA2161F1E2200489929 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F41EDA6161F1E2200489929 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Resources/se.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F41EDA9161F1E2200489929 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		4F41EDAB161F1E2200489929 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		4F41EDAD161F1E2200489929 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		4F41EDB0161F1E2200489929 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "Resources/splash/Default~iphone.png"; sourceTree = "<group>"; };
+		4F41EDB2161F1E2200489929 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "Resources/splash/Default@2x~iphone.png"; sourceTree = "<group>"; };
+		4F41EDB4161F1E2300489929 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		4F41EDB6161F1E2300489929 /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
+		4F41EDB9161F1E2300489929 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		4F41EDBA161F1E2300489929 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		4F41EDBC161F1E2300489929 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		4F41EDBD161F1E2300489929 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		4F41EDBF161F1E2300489929 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
+		4F41EDC2161F1E2300489929 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		4F41EDC3161F1E2300489929 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		4F41EDC9161F1F2500489929 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F41ED68161F1E2200489929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F41ED73161F1E2200489929 /* Foundation.framework in Frameworks */,
+				4F41ED75161F1E2200489929 /* UIKit.framework in Frameworks */,
+				4F41ED77161F1E2200489929 /* CoreGraphics.framework in Frameworks */,
+				4F41ED79161F1E2200489929 /* AddressBook.framework in Frameworks */,
+				4F41ED7B161F1E2200489929 /* AddressBookUI.framework in Frameworks */,
+				4F41ED7D161F1E2200489929 /* AudioToolbox.framework in Frameworks */,
+				4F41ED7F161F1E2200489929 /* AVFoundation.framework in Frameworks */,
+				4F41ED81161F1E2200489929 /* CoreLocation.framework in Frameworks */,
+				4F41ED83161F1E2200489929 /* MediaPlayer.framework in Frameworks */,
+				4F41ED85161F1E2200489929 /* QuartzCore.framework in Frameworks */,
+				4F41ED87161F1E2200489929 /* SystemConfiguration.framework in Frameworks */,
+				4F41ED89161F1E2200489929 /* MobileCoreServices.framework in Frameworks */,
+				4F41ED8B161F1E2200489929 /* CoreMedia.framework in Frameworks */,
+				4F41ED96161F1E2200489929 /* Cordova.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F41ED6B161F1E2200489929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F41ED60161F1E2100489929 = {
+			isa = PBXGroup;
+			children = (
+				4F41EDC9161F1F2500489929 /* www */,
+				4F41ED8C161F1E2200489929 /* Eatility */,
+				4F41ED71161F1E2200489929 /* Frameworks */,
+				4F41ED6F161F1E2200489929 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F41ED6F161F1E2200489929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED6E161F1E2200489929 /* Eatility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F41ED71161F1E2200489929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED72161F1E2200489929 /* Foundation.framework */,
+				4F41ED74161F1E2200489929 /* UIKit.framework */,
+				4F41ED76161F1E2200489929 /* CoreGraphics.framework */,
+				4F41ED78161F1E2200489929 /* AddressBook.framework */,
+				4F41ED7A161F1E2200489929 /* AddressBookUI.framework */,
+				4F41ED7C161F1E2200489929 /* AudioToolbox.framework */,
+				4F41ED7E161F1E2200489929 /* AVFoundation.framework */,
+				4F41ED80161F1E2200489929 /* CoreLocation.framework */,
+				4F41ED82161F1E2200489929 /* MediaPlayer.framework */,
+				4F41ED84161F1E2200489929 /* QuartzCore.framework */,
+				4F41ED86161F1E2200489929 /* SystemConfiguration.framework */,
+				4F41ED88161F1E2200489929 /* MobileCoreServices.framework */,
+				4F41ED8A161F1E2200489929 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F41ED8C161F1E2200489929 /* Eatility */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED95161F1E2200489929 /* Cordova.framework */,
+				4F41ED97161F1E2200489929 /* Resources */,
+				4F41EDB8161F1E2300489929 /* Classes */,
+				4F41EDC1161F1E2300489929 /* Plugins */,
+				4F41ED8D161F1E2200489929 /* Supporting Files */,
+			);
+			path = Eatility;
+			sourceTree = "<group>";
+		};
+		4F41ED8D161F1E2200489929 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED8E161F1E2200489929 /* Eatility-Info.plist */,
+				4F41ED8F161F1E2200489929 /* InfoPlist.strings */,
+				4F41ED92161F1E2200489929 /* main.m */,
+				4F41ED94161F1E2200489929 /* Eatility-Prefix.pch */,
+				4F41EDB6161F1E2300489929 /* Cordova.plist */,
+				4F41EDBF161F1E2300489929 /* MainViewController.xib */,
+				4F41EDC3161F1E2300489929 /* verify.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F41ED97161F1E2200489929 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDB4161F1E2300489929 /* Capture.bundle */,
+				4F41ED98161F1E2200489929 /* en.lproj */,
+				4F41ED9C161F1E2200489929 /* es.lproj */,
+				4F41EDA0161F1E2200489929 /* de.lproj */,
+				4F41EDA4161F1E2200489929 /* se.lproj */,
+				4F41EDA8161F1E2200489929 /* icons */,
+				4F41EDAF161F1E2200489929 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F41ED98161F1E2200489929 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED99161F1E2200489929 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		4F41ED9C161F1E2200489929 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F41ED9D161F1E2200489929 /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		4F41EDA0161F1E2200489929 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDA1161F1E2200489929 /* Localizable.strings */,
+			);
+			name = de.lproj;
+			sourceTree = "<group>";
+		};
+		4F41EDA4161F1E2200489929 /* se.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDA5161F1E2200489929 /* Localizable.strings */,
+			);
+			name = se.lproj;
+			sourceTree = "<group>";
+		};
+		4F41EDA8161F1E2200489929 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDA9161F1E2200489929 /* icon.png */,
+				4F41EDAB161F1E2200489929 /* icon@2x.png */,
+				4F41EDAD161F1E2200489929 /* icon-72.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		4F41EDAF161F1E2200489929 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDB0161F1E2200489929 /* Default~iphone.png */,
+				4F41EDB2161F1E2200489929 /* Default@2x~iphone.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		4F41EDB8161F1E2300489929 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDB9161F1E2300489929 /* AppDelegate.h */,
+				4F41EDBA161F1E2300489929 /* AppDelegate.m */,
+				4F41EDBC161F1E2300489929 /* MainViewController.h */,
+				4F41EDBD161F1E2300489929 /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4F41EDC1161F1E2300489929 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4F41EDC2161F1E2300489929 /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F41ED6D161F1E2200489929 /* Eatility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F41EDC6161F1E2300489929 /* Build configuration list for PBXNativeTarget "Eatility" */;
+			buildPhases = (
+				4F41ED67161F1E2200489929 /* Sources */,
+				4F41ED68161F1E2200489929 /* Frameworks */,
+				4F41ED69161F1E2200489929 /* Resources */,
+				4F41ED6A161F1E2200489929 /* Sources */,
+				4F41ED6B161F1E2200489929 /* Frameworks */,
+				4F41ED6C161F1E2200489929 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eatility;
+			productName = Eatility;
+			productReference = 4F41ED6E161F1E2200489929 /* Eatility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F41ED62161F1E2100489929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "The Plumtree Group";
+			};
+			buildConfigurationList = 4F41ED65161F1E2100489929 /* Build configuration list for PBXProject "Eatility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = 4F41ED60161F1E2100489929;
+			productRefGroup = 4F41ED6F161F1E2200489929 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F41ED6D161F1E2200489929 /* Eatility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F41ED69161F1E2200489929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F41ED91161F1E2200489929 /* InfoPlist.strings in Resources */,
+				4F41ED9B161F1E2200489929 /* Localizable.strings in Resources */,
+				4F41ED9F161F1E2200489929 /* Localizable.strings in Resources */,
+				4F41EDA3161F1E2200489929 /* Localizable.strings in Resources */,
+				4F41EDA7161F1E2200489929 /* Localizable.strings in Resources */,
+				4F41EDAA161F1E2200489929 /* icon.png in Resources */,
+				4F41EDAC161F1E2200489929 /* icon@2x.png in Resources */,
+				4F41EDAE161F1E2200489929 /* icon-72.png in Resources */,
+				4F41EDB1161F1E2200489929 /* Default~iphone.png in Resources */,
+				4F41EDB3161F1E2200489929 /* Default@2x~iphone.png in Resources */,
+				4F41EDB5161F1E2300489929 /* Capture.bundle in Resources */,
+				4F41EDB7161F1E2300489929 /* Cordova.plist in Resources */,
+				4F41EDC0161F1E2300489929 /* MainViewController.xib in Resources */,
+				4F41EDCA161F1F2500489929 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F41ED6C161F1E2200489929 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F41ED67161F1E2200489929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F41ED93161F1E2200489929 /* main.m in Sources */,
+				4F41EDBB161F1E2300489929 /* AppDelegate.m in Sources */,
+				4F41EDBE161F1E2300489929 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F41ED6A161F1E2200489929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F41ED8F161F1E2200489929 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F41ED90161F1E2200489929 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F41ED99161F1E2200489929 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F41ED9A161F1E2200489929 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4F41ED9D161F1E2200489929 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F41ED9E161F1E2200489929 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4F41EDA1161F1E2200489929 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F41EDA2161F1E2200489929 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4F41EDA5161F1E2200489929 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F41EDA6161F1E2200489929 /* se */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F41EDC4161F1E2300489929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4F41EDC5161F1E2300489929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F41EDC7161F1E2300489929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eatility/Eatility-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				INFOPLIST_FILE = "Eatility/Eatility-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F41EDC8161F1E2300489929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eatility/Eatility-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				INFOPLIST_FILE = "Eatility/Eatility-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F41ED65161F1E2100489929 /* Build configuration list for PBXProject "Eatility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F41EDC4161F1E2300489929 /* Debug */,
+				4F41EDC5161F1E2300489929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F41EDC6161F1E2300489929 /* Build configuration list for PBXNativeTarget "Eatility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F41EDC7161F1E2300489929 /* Debug */,
+				4F41EDC8161F1E2300489929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F41ED62161F1E2100489929 /* Project object */;
+}

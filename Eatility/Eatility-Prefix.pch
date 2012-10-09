@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Eatility' target in the 'Eatility' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
