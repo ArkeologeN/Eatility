@@ -1,8 +1,13 @@
 var $ = jQuery;
+var map;
+var mapI;
+var service;
+var infowindow;
 
 $(document).ready(function(){
-    $('#map').width(document.width).height(document.height);
-    $('#map').gmap3();
+    $('#map').width(window.innerWidth).height(window.innerHeight);
+    buildMap({});
+    //$("map").gmap3();
         
 });
 
@@ -22,25 +27,7 @@ function onLinkedInLoad() {
                 IN.API.Raw('/companies/'+result.positions.values[0].company.id +':(id,locations:(address))')
                     .result(function(res){
                         var _location = res.locations.values[0].address;
-                        $('#map').gmap3({
-                            action:'getAddress',
-                            address: _location.street1+" "+ _location.city+" "+_location.postalCode,
-                            callback:function(loc){
-                                var latlng = loc[0].geometry.location;
-                                
-                                $.ajax({
-                                    url: 'https://maps.googleapis.com/maps/api/place/search/json?location='+latlng.Ya+','+latlng.Xa +'&radius=500&types=restaurant&sensor=true&key=AIzaSyC97Y0B4PZor-L43_tauOFWwOceNWKUEkI',
-                                    success: function(places) {
-                                        console.log("places here!");
-                                        console.log(places);
-                                    },
-                                    error: function(err){
-                                        console.log(err);
-                                    }
-                                });
-                                //https://maps.googleapis.com/maps/api/place/search/json?location=-33.8670522,151.1957362&radius=500&types=restaurant&sensor=true&key=AIzaSyC97Y0B4PZor-L43_tauOFWwOceNWKUEkI
-                            }
-                        });
+                        initialize(_location);
                 });
             }
             
@@ -49,3 +36,69 @@ function onLinkedInLoad() {
         });
 }
 
+
+
+
+function initialize(addr) {
+   //console.log(addr);
+   var _addr = addr.street1 + " "+ addr.postalCode + " " + addr.city;
+   var locs = null;
+    makePlacesFromAddress(_addr);
+}
+
+function createMarker(place) {
+    var placeLoc = place.geometry.location;
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location,
+        icon: place.icon
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(place.name);
+        infowindow.open(map, this);
+    });
+}
+
+function makePlacesFromAddress(addr) {
+    var toReturn = null
+    var geocoder = null;
+    geocoder = new google.maps.Geocoder();
+    geocoder.geocode( {'address': addr}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            toReturn = (results[0].geometry.location);
+            //var pyrmont = new google.maps.LatLng(-33.8665433,151.1956316);
+           // var pyrmont = new google.maps.LatLng(toReturn.Ya,toReturn.Xa);
+           var pyrmont = new google.maps.LatLng(toReturn.Xa,toReturn.Ya);
+           buildMap({'pyrmont': pyrmont});
+           
+            var request = {
+                location: pyrmont,
+                radius: '500',
+                types: ['store']
+            };
+
+            service = new google.maps.places.PlacesService(map);
+            service.search(request, function(results, status) {
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        createMarker(results[i]);
+                    }
+                }
+            });
+        } else {
+            alert("Geocode was not successful for the following reason: " + status);
+        }
+    });
+    
+    return toReturn;
+}
+
+function buildMap (args) {
+    var pyrmont = args.pyrmont;// ||  new google.maps.LatLng(151.1956316,-33.8665433);
+    map = new google.maps.Map(document.getElementById('map'), {
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: pyrmont,
+        zoom: 15
+    });
+}
